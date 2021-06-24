@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "GradeBookTest/1.0.0": {
         "dependencies": {
+          "Fundamentals": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.9.4",
           "coverlet.collector": "3.0.2",
           "xunit": "2.4.1",
@@ -1089,7 +1090,12 @@
           }
         }
       },
-      "xunit.runner.visualstudio/2.4.3": {}
+      "xunit.runner.visualstudio/2.4.3": {},
+      "Fundamentals/1.0.0": {
+        "runtime": {
+          "Fundamentals.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -1741,6 +1747,11 @@
       "sha512": "sha512-kZZSmOmKA8OBlAJaquPXnJJLM9RwQ27H7BMVqfMLUcTi9xHinWGJiWksa3D4NEtz0wZ/nxd2mogObvBgJKCRhQ==",
       "path": "xunit.runner.visualstudio/2.4.3",
       "hashPath": "xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+    },
+    "Fundamentals/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -19,11 +19,33 @@ namespace Fundamentals
 
         public Book(int id, string name)
         {
-            this.id = id;
-            this.name = name;
+            this.Id = id;
+            this.Name = name;
         }
 
         public List<double> Grades { get => grades; set => grades = value; }
+        public string Name { get => name; set => name = value; }
+        public int Id { get => id; set => id = value; }
+
+        public double findHigh()
+        {
+            double high = double.MinValue;
+            foreach(double number in this.grades)
+            {
+                high = Math.Max(number, high);
+            }
+            return high;
+        }
+
+        public double findLow()
+        {
+            double low = double.MaxValue;
+            foreach (double number in this.grades)
+            {
+                low = Math.Min(number, low);
+            }
+            return low;
+        }
 
         public void addGrade(double v)
         {

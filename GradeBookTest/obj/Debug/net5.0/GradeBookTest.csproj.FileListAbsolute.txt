@@ -98,3 +98,10 @@ D:\Development\C#\Code\Fundamentals\GradeBookTest\obj\Debug\net5.0\GradeBookTest
 D:\Development\C#\Code\Fundamentals\GradeBookTest\obj\Debug\net5.0\ref\GradeBookTest.dll
 D:\Development\C#\Code\Fundamentals\GradeBookTest\obj\Debug\net5.0\GradeBookTest.pdb
 D:\Development\C#\Code\Fundamentals\GradeBookTest\obj\Debug\net5.0\GradeBookTest.genruntimeconfig.cache
+D:\Development\C#\Code\Fundamentals\GradeBookTest\bin\Debug\net5.0\CoverletSourceRootsMapping
+D:\Development\C#\Code\Fundamentals\GradeBookTest\bin\Debug\net5.0\Fundamentals.deps.json
+D:\Development\C#\Code\Fundamentals\GradeBookTest\bin\Debug\net5.0\Fundamentals.runtimeconfig.json
+D:\Development\C#\Code\Fundamentals\GradeBookTest\bin\Debug\net5.0\Fundamentals.runtimeconfig.dev.json
+D:\Development\C#\Code\Fundamentals\GradeBookTest\bin\Debug\net5.0\Fundamentals.exe
+D:\Development\C#\Code\Fundamentals\GradeBookTest\bin\Debug\net5.0\Fundamentals.dll
+D:\Development\C#\Code\Fundamentals\GradeBookTest\bin\Debug\net5.0\Fundamentals.pdb
