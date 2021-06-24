@@ -1,0 +1,16 @@
+D:\Development\C#\Code\Fundamentals\Fundamentals\bin\Debug\net5.0\Fundamentals.exe
+D:\Development\C#\Code\Fundamentals\Fundamentals\bin\Debug\net5.0\Fundamentals.deps.json
+D:\Development\C#\Code\Fundamentals\Fundamentals\bin\Debug\net5.0\Fundamentals.runtimeconfig.json
+D:\Development\C#\Code\Fundamentals\Fundamentals\bin\Debug\net5.0\Fundamentals.runtimeconfig.dev.json
+D:\Development\C#\Code\Fundamentals\Fundamentals\bin\Debug\net5.0\Fundamentals.dll
+D:\Development\C#\Code\Fundamentals\Fundamentals\bin\Debug\net5.0\ref\Fundamentals.dll
+D:\Development\C#\Code\Fundamentals\Fundamentals\bin\Debug\net5.0\Fundamentals.pdb
+D:\Development\C#\Code\Fundamentals\Fundamentals\obj\Debug\net5.0\Fundamentals.csproj.AssemblyReference.cache
+D:\Development\C#\Code\Fundamentals\Fundamentals\obj\Debug\net5.0\Fundamentals.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\C#\Code\Fundamentals\Fundamentals\obj\Debug\net5.0\Fundamentals.AssemblyInfoInputs.cache
+D:\Development\C#\Code\Fundamentals\Fundamentals\obj\Debug\net5.0\Fundamentals.AssemblyInfo.cs
+D:\Development\C#\Code\Fundamentals\Fundamentals\obj\Debug\net5.0\Fundamentals.csproj.CoreCompileInputs.cache
+D:\Development\C#\Code\Fundamentals\Fundamentals\obj\Debug\net5.0\Fundamentals.dll
+D:\Development\C#\Code\Fundamentals\Fundamentals\obj\Debug\net5.0\ref\Fundamentals.dll
+D:\Development\C#\Code\Fundamentals\Fundamentals\obj\Debug\net5.0\Fundamentals.pdb
+D:\Development\C#\Code\Fundamentals\Fundamentals\obj\Debug\net5.0\Fundamentals.genruntimeconfig.cache
