@@ -92,6 +92,11 @@ namespace Fundamentals
 
             book.showInfo();
 
+            book.Name2 = "Khau Minh Duy";
+            string name2 = book.Name2;
+
+            Console.WriteLine(name2);
+
         }
     }
 }

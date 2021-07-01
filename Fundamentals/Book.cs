@@ -6,7 +6,39 @@ using System.Threading.Tasks;
 
 namespace Fundamentals
 {
-    public class Book
+
+    public abstract class BookBase
+    {
+        public abstract void addGrade(double v);
+    }
+
+    public class ImplBookBase : BookBase
+    {
+        public override void addGrade(double v)
+        {
+            Console.WriteLine("Abstract class");
+        }
+    }
+
+    public class NameOfObject
+    {
+        public NameOfObject()
+        {
+        }
+
+        public NameOfObject(string name2)
+        {
+            Name2 = name2;
+        }
+
+        public String Name2
+        {
+            get;
+            set;
+        }
+    }
+
+    public class Book : NameOfObject
     {
         private int id;
         private string name;
@@ -50,6 +82,11 @@ namespace Fundamentals
         public void addGrade(double v)
         {
             this.grades.Add(v);
+        }
+
+        public void addGrade(double v, double x)
+        {
+
         }
 
         public static void methodStatic()
