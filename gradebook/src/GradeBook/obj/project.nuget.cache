@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "kStg6GBKgya67XhYI+bLwWL/1h3VcIdYL1FrMQVLYUUerd5OlNMRsc0DTMa8wc+XdnEdJ8UDB+HrD/hXEMzOdQ==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\SourceCode\\CSharp-Fundamentals\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://api.nuget.org/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
