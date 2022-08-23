@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace GradeBook.Model
 {
-    public class Statistics
+  public class Statistics
     {
       public double Average;
       public double High;
       public double Low;
+      public char Letter;
     }
 }

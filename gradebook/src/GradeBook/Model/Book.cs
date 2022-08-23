@@ -1,10 +1,11 @@
+using System.Runtime.Versioning;
 namespace GradeBook.Model
 {
   public class Book
   {
 
-    List<double> Grades;
-    string Name;
+    public List<double> Grades;
+    public string Name;
 
     public Book(string name)
     {
@@ -14,7 +15,14 @@ namespace GradeBook.Model
 
     public void AddGrade(double grade)
     {
-      Grades.Add(grade);
+      if (0 <= grade && grade < 100)
+      {
+        Grades.Add(grade);
+      }
+      else
+      {
+        throw new ArgumentException($"Invalid {nameof(grade)}");
+      }
     }
 
     public Statistics ComputeStatistics()
@@ -32,7 +40,47 @@ namespace GradeBook.Model
       }
       statistics.Average /= Grades.Count;
 
+      switch(statistics.Average)
+      {
+        case var average when average >= 90:
+          statistics.Letter = 'A';
+          break;
+        case var average when average >= 80:
+          statistics.Letter = 'B';
+          break;
+        case var average when average >= 70:
+          statistics.Letter = 'C';
+          break;
+        case var average when average >= 60:
+          statistics.Letter = 'D';
+          break;
+        default:
+          statistics.Letter = 'F';
+          break;
+      }
+
       return statistics;
     }
+
+    public void AddGrade(char letter)
+    {
+      switch (letter)
+      {
+        case 'A':
+          AddGrade(90);
+          break;
+        case 'B':
+          AddGrade(80);
+          break;
+        case 'C':
+          AddGrade(70);
+          break;
+        default:
+          AddGrade(0);
+          break;
+      }
+    }
+
   }
+
 }
