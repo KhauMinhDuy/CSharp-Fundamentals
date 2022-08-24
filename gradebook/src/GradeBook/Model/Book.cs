@@ -1,11 +1,15 @@
-using System.Runtime.Versioning;
 namespace GradeBook.Model
 {
+
+  public delegate void GradesAddDelegate(object sender, EventArgs eventArgs);
+
   public class Book
   {
 
     public List<double> Grades;
-    public string Name;
+    public string Name {get; set;}
+    public event GradesAddDelegate GradesAdd;
+    public const string CATEGORY = "asd";
 
     public Book(string name)
     {
@@ -18,6 +22,10 @@ namespace GradeBook.Model
       if (0 <= grade && grade < 100)
       {
         Grades.Add(grade);
+        if(GradesAdd != null) 
+        {
+          GradesAdd(this, new EventArgs());
+        }
       }
       else
       {
