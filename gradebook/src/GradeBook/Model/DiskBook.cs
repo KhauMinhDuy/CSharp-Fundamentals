@@ -4,6 +4,7 @@ namespace GradeBook.Model
   {
     public DiskBook(string name) : base(name)
     {
+      Name = name;
     }
 
     public override event GradesAddDelegate GradesAdd;

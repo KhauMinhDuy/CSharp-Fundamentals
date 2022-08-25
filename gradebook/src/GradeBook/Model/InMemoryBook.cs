@@ -12,7 +12,8 @@ namespace GradeBook.Model
 
     public InMemoryBook(string name) : base(name)
     {
-      Grades = new();
+      Grades = new List<double>();
+      Name = name;
     }
 
     public override void AddGrades(double grade)
