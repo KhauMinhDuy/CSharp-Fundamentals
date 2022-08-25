@@ -7,22 +7,40 @@ namespace GradeBook
 
     public static void Main(string[] args)
     {
-      Book book = new Book("book1");
+      IBook book = new DiskBook("book1");
       book.GradesAdd += OnGradesAdd;
       book.GradesAdd += OnGradesAdd;
       book.GradesAdd -= OnGradesAdd;
 
+      EnterGrades(book);
+
+      Statistics statistics = book.ComputeStatistics();
+
+      Console.WriteLine($"The Book Name is {book.Name}");
+      Console.WriteLine($"The lowest grade is {statistics.Low}");
+      Console.WriteLine($"The highest grade is {statistics.High}");
+      Console.WriteLine($"The average grade is {statistics.Average:N1}");
+      Console.WriteLine($"The letter grades is {statistics.Letter}");
+    }
+
+    static void OnGradesAdd(object sender, EventArgs eventArgs)
+    {
+      Console.WriteLine($"a grades was add");
+    }
+
+    private static void EnterGrades(IBook book)
+    {
       while (true)
       {
         Console.Write("Nhap diem hoac nhap 'ngu nhu con bo' de thoat: ");
         var input = Console.ReadLine();
-        if (input == "ngu nhu con bo") break;
+        if (input == "q") break;
 
         try
         {
           double grades;
-          double.TryParse(input,out grades);
-          book.AddGrade(grades);
+          double.TryParse(input, out grades);
+          book.AddGrades(grades);
         }
         catch (ArgumentException e)
         {
@@ -38,22 +56,6 @@ namespace GradeBook
         }
 
       }
-
-      Statistics statistics = book.ComputeStatistics();
-
-      // book.Name = "";
-
-      Console.WriteLine($"{Book.CATEGORY}");
-      Console.WriteLine($"The Book Name is {book.Name}");
-      Console.WriteLine($"The lowest grade is {statistics.Low}");
-      Console.WriteLine($"The highest grade is {statistics.High}");
-      Console.WriteLine($"The average grade is {statistics.Average:N1}");
-      Console.WriteLine($"The letter grades is {statistics.Letter}");
-    }
-    
-    static void OnGradesAdd(object sender, EventArgs eventArgs)
-    {
-      Console.WriteLine($"a grades was add");
     }
 
   }
